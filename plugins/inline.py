@@ -32,7 +32,7 @@ from pyrogram import (
 buttons = [
 
     [
-        InlineKeyboardButton('🐸 Join Group', url='https://t.me/pagolderaddaghor'),
+        InlineKeyboardButton('🐸 Join Group', url='https://t.me/ak_joot_bondhuu'),
         InlineKeyboardButton('🐸 Join Here', url='https://t.me/roxenband'),
     ]
     ]
