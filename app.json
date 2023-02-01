@@ -22,7 +22,7 @@
       "HEROKU_APP_NAME": {
         "description": "Heroku App Name.",
         "required": false
-      },
+      }
     },
     "formation": {
       "worker": {
