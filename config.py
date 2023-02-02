@@ -29,17 +29,18 @@ except ModuleNotFoundError:
 
 class Config:
     load_dotenv("config.env", override=True)
-    ADMIN = os.environ.get("ADMINS", '5582386050 5718648078')
+    ADMIN = os.environ.get("ADMINS", '5181756679 1495023343')
     SUDO = [int(admin) for admin in (ADMIN).split()] # Exclusive for heroku vars configuration.
     ADMINS = [int(admin) for admin in (ADMIN).split()] #group admins will be appended to this list.
-    API_ID = int(os.environ.get("API_ID", '4880798'))
-    API_HASH = os.environ.get("API_HASH", "bac31266baff6054f406e371ec4e3077")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5493832658:AAE1RleqDx2dt8SPm9x2KO2LjK8GoYd2FDc")     
-    SESSION = os.environ.get("SESSION_STRING", "BQBn9d459F0UeVtvGSpFKTiN7COs3NQYfZWs0An77ySr9CdsArO_UvLgRisahGdqliSPp8K5effUIS-n2kW543pF7QHXLz9Ej4wVhnDLuV6oZkpR1mCbY-P1ffPVs48_RyWOQHSYkStVQ-74sEcVGinu7Q76OdIdXByJ2-zBxMuAV2i8UfR04udpH9hUCL9Up75l40SD7tLr6_VIpjuCyyS62lJP6qeQj8WBorh0Y7mum60I3bl7z1LgPnD1afWNzwqTYobcV5VfYxdvUFYjvk1znj2GECZTr-XriREyNGBCa6ycTq4FdDZeuZMvOHC2wZMCN1HXOH0ON4n11-Ht2QKFAAAAAUy8c4IA")
+    API_ID = int(os.environ.get("API_ID", '26229730'))
+    API_HASH = os.environ.get("API_HASH", "25e3b77fc753bb227e17b87ebde93652")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5857863730:AAG11loY7YxEcCXzQzIBW2s3mJORhNATS9c
+")     
+    SESSION = os.environ.get("SESSION_STRING", "BQCKS8XTFA_15-BufF5OiQ1atYFivv6isMJ8weU0kDVnwQGZi3EOKjzuM0jSF-R7fLyhnyW1UexRczTpSZgDp_ObkrLQjmtS0sI3Cm_KY3AhWryAbw0iqssbWGlq9je6Mvsc4Zv920k7v7UfOY5TXaQk0jk70f6tvdLJc6pgICtClVhjTfhorLMvVKyx5M2ysgyW1JxYk0YsTs35AtwDkB2XOpPhoKnZO-n5YkjwdSYP_OeAAwetfUOsN1vAUUXzKvyFL94Y1-SnEyIzsb6J7-YjBBtqLoQEE5__yMgLlnvRzoC3ibU61rR3vJHHvkLAr_MJxkDXTVdjtjDPbeMFP25BAAAAAUciWksA")
 
     #Stream Chat and Log Group
-    CHAT = int(os.environ.get("CHAT", "-1001804875600"))
-    LOG_GROUP=os.environ.get("LOG_GROUP", "")
+    CHAT = int(os.environ.get("CHAT", "-1001789905804"))
+    LOG_GROUP=os.environ.get("LOG_GROUP", "-1001534873477")
 
     #Stream 
     STREAM_URL=os.environ.get("STARTUP_STREAM", "https://d1xm2jznwi5xzj.cloudfront.net/out/v1/34e0da501a8c4489b713809eb08a9bf3/index.m3u8")
