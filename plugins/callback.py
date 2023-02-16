@@ -161,7 +161,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             
         if not query.from_user.id in admins:
             await query.answer(
-                "💚 Played Tanvir.mp3",
+                "💚 Played Downloaded.mp3",
                 show_alert=True
                 )
             return
