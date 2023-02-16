@@ -29,24 +29,25 @@ except ModuleNotFoundError:
 
 class Config:
     load_dotenv("config.env", override=True)
-    ADMIN = os.environ.get("ADMINS", '')
+    ADMIN = os.environ.get("ADMINS", '5391316262 5181756679 5718648078')
     SUDO = [int(admin) for admin in (ADMIN).split()] # Exclusive for heroku vars configuration.
     ADMINS = [int(admin) for admin in (ADMIN).split()] #group admins will be appended to this list.
-    API_ID = int(os.environ.get("API_ID", ''))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    API_ID = int(os.environ.get("API_ID", '24634346'))
+    API_HASH = os.environ.get("API_HASH", "2404696231385c81d7168a9d91ed498b")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5857863730:AAG11loY7YxEcCXzQzIBW2s3mJORhNATS9c
+")
 ")     
-    SESSION = os.environ.get("SESSION_STRING", "")
+    SESSION = os.environ.get("SESSION_STRING", "AQAq6yGuoFXhAIY5M48VEDlKGJK0jNwXCYOvVkPsrvooag96Y34kZSQPG-BlyT7pnpG8TJNo0VmPaHeusYOO-aXJgFh1r7FfunM-0tAdtH_1d5VExJH8B_ZPxA3vluqGqJ-iKVr-bppSB69Ln0dFlVlGhEpYXc-3I82QpWEuYnWTHTamarHB0PsKEWLidIMbzwZFgv4jExXkbp1bFza-KCYz5VTOJET7iH1Fc4UCD7n2TCKM5xvwPVOrsXnXYshWq7yBfggxO4stDntE3hI8DjPe9GL-rmh3KVcNbtDGUkiLbSksshXGVhi0xa9rG7JT7xPlINfFx6qDq6hNRy39RDwjAAAAAT0o7sAA")
 
     #Stream Chat and Log Group
-    CHAT = int(os.environ.get("CHAT", ""))
+    CHAT = int(os.environ.get("CHAT", "-1001850868879"))
     LOG_GROUP=os.environ.get("LOG_GROUP", "")
 
     #Stream 
     STREAM_URL=os.environ.get("STARTUP_STREAM", "")
    
     #Database
-    DATABASE_URI=os.environ.get("DATABASE_URI", "")
+    DATABASE_URI=os.environ.get("DATABASE_URI", "mongodb+srv://redzone:red@cluster0.9lfcyfo.mongodb.net/?retryWrites=true&w=majority")
     DATABASE_NAME=os.environ.get("DATABASE_NAME", "VCPlayerBot")
 
 
