@@ -186,11 +186,11 @@ async def add_to_playlist(_, message: Message):
             await msg.edit("Media added to playlist")
         elif type in ["youtube", "query", "ytdl_s"]:
             if type=="youtube":
-                await msg.edit("🐸 **Fetching Video From YouTube...**\n Join @roxenband")
+                await msg.edit("🐸 **Fetching Video From YouTube...**")
                 url=yturl
             elif type=="query":
                 try:
-                    await msg.edit("🐸 **Fetching Video From YouTube...**\n Join @roxenband")
+                    await msg.edit("🐸 **Fetching Video From YouTube...**")
                     ytquery=ysearch
                     results = YoutubeSearch(ytquery, max_results=1).to_dict()
                     url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -327,7 +327,7 @@ async def clear_play_list(client, m: Message):
 
 @Client.on_message(filters.command(["cplay", f"cplay@{Config.BOT_USERNAME}"]) & admin_filter & chat_filter)
 async def channel_play_list(client, m: Message):
-    with suppress(MessageIdInvalid, MessageNotModified):
+    with suppress(MessageIdInvalid, MessageNotModified): 
         k=await m.reply("Setting up for channel play..")
         if " " in m.text:
             you, me = m.text.split(" ", 1)
@@ -482,7 +482,7 @@ allcmd = ["play", "player", f"play@{Config.BOT_USERNAME}", f"player@{Config.BOT_
 
 @Client.on_message(filters.command(admincmds) & ~admin_filter & chat_filter)
 async def notforu(_, m: Message):
-    k = await _.send_cached_media(chat_id=m.chat.id, file_id="CAADBQADEgQAAtMJyFVJOe6-VqYVzAI", caption="You Are Not Authorized", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚡️Join Here', url='https://t.me/roxenband')]]))
+    k = await _.send_cached_media(chat_id=m.chat.id, file_id="CAADBQADEgQAAtMJyFVJOe6-VqYVzAI", caption="You Are Not Authorized", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚡️Join Here', url='https://t.me/DANGERZONE69')]]))
     await delete_messages([m, k])
 
 @Client.on_message(filters.command(allcmd) & ~chat_filter & filters.group)
@@ -501,8 +501,8 @@ async def not_chat(_, m: Message):
     else:
         buttons = [
             [
-                InlineKeyboardButton('🐸Join Our Group🐸', url='https://t.me/ak_joot_bondhuu'),
-                InlineKeyboardButton('🐸 Join Here🐸', url='https://t.me/roxenbd'),
+                InlineKeyboardButton('🐸Join Our Group🐸', url='https://t.me/DANGERZONE69'),
+                InlineKeyboardButton('🐸 Join Here🐸', url='https://t.me/DANGERZONE69'),
             ]
             ]
         await m.reply("<b>You can't use this bot in this group, for that you have to make your own bot from the [SOURC CODE](https://github.com/Tanvir6555/VCPlayerBot) below.</b>", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
