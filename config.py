@@ -40,11 +40,11 @@ class Config:
     SESSION = os.environ.get("SESSION_STRING", "AQAq6yGuoFXhAIY5M48VEDlKGJK0jNwXCYOvVkPsrvooag96Y34kZSQPG-BlyT7pnpG8TJNo0VmPaHeusYOO-aXJgFh1r7FfunM-0tAdtH_1d5VExJH8B_ZPxA3vluqGqJ-iKVr-bppSB69Ln0dFlVlGhEpYXc-3I82QpWEuYnWTHTamarHB0PsKEWLidIMbzwZFgv4jExXkbp1bFza-KCYz5VTOJET7iH1Fc4UCD7n2TCKM5xvwPVOrsXnXYshWq7yBfggxO4stDntE3hI8DjPe9GL-rmh3KVcNbtDGUkiLbSksshXGVhi0xa9rG7JT7xPlINfFx6qDq6hNRy39RDwjAAAAAT0o7sAA")
 
     #Stream Chat and Log Group
-    CHAT = int(os.environ.get("CHAT", "-1001850868879"))
+    CHAT = int(os.environ.get("CHAT", "-1001850868879 -1001526256579"))
     LOG_GROUP=os.environ.get("LOG_GROUP", "")
 
     #Stream 
-    STREAM_URL=os.environ.get("STARTUP_STREAM", "")
+    STREAM_URL=os.environ.get("STARTUP_STREAM", "http://d2q8p4pe5spbak.cloudfront.net/bpk-tv/9XM/9XM.isml/thenayeemparvez.m3u8")
    
     #Database
     DATABASE_URI=os.environ.get("DATABASE_URI", "mongodb+srv://redzone:red@cluster0.9lfcyfo.mongodb.net/?retryWrites=true&w=majority")
